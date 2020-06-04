@@ -5,7 +5,7 @@ See [The Teensy Files](http://www.muppetlabs.com/~breadbox/software/tiny/) for t
 
 `./run.sh 'Hello, humans!'`
 
-``` sh
+```
 Output:
 Hello, humans!
 
