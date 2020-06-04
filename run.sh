@@ -28,7 +28,7 @@ echo "Binary size: $(cat $BIN | wc -c) bytes."
 # Verify:
 echo
 echo "Verification command:"
-hex=$(xxd -plain -cols 256 -u $BIN | sed 's/.\{2\}/& /g')
+hex=$(xxd -plain -cols 256 -u $BIN)
 CHK=/tmp/tiny
 cmd="echo '$hex' | xxd -r -p > $CHK && chmod +x $CHK && $CHK"
 echo $cmd

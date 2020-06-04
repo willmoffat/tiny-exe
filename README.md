@@ -18,7 +18,7 @@ B9 31 00 43 05 B2 0F CD 80 25 20 00 01 00 93 CD
 Binary size: 64 bytes.
 
 Verification command:
-echo '7F 45 4C 46 01 00 00 00 00 00 00 00 00 00 43 05 02 00 03 00 1A 00 43 05 1A 00 43 05 04 00 00 00 B9 31 00 43 05 B2 0F CD 80 25 20 00 01 00 93 CD 80 48 65 6C 6C 6F 2C 20 68 75 6D 61 6E 73 21 0A ' | xxd -r -p > /tmp/tiny && chmod +x /tmp/tiny && /tmp/tiny
+echo '7F454C46010000000000000000004305020003001A0043051A00430504000000B931004305B20FCD80252000010093CD8048656C6C6F2C2068756D616E73210A' | xxd -r -p > /tmp/tiny && chmod +x /tmp/tiny && /tmp/tiny
 
 Verification output:
 Hello, humans!
