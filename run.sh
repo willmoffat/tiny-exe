@@ -16,6 +16,11 @@ chmod +x $BIN
 echo "Output:"
 ./$BIN
 
+# Binary dump, 8 bytes wide:
+echo
+echo "Binary dump:"
+xxd -b --cols 8 $BIN
+
 # Hex dump 16 bytes wide:
 echo
 echo "Here's the hex dump:"
